@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/EvolveGames/RealisticFPSController/Scenes/DemoScene.unity
     guid: ab0b46e2e44b5d14f99aff193b77d1c2
   - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
     path: Assets/Morgue Room PBR/morgue scene/Game.unity
     guid: 845128cf95f90184697fffb609346de8
   - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Credits.unity
+    guid: 5c9b0b75697bd7b44b1a0c699061f0b6
   m_configObjects: {}
