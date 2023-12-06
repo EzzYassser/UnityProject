@@ -5,11 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class DontDestroyAudios : MonoBehaviour
 {
+    private static bool isCreated = false;  // Track if an instance of the script has been created
+
     private AudioSource music;
 
     void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
+        if (!isCreated)
+        {
+            DontDestroyOnLoad(gameObject);
+            isCreated = true;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         music = GetComponent<AudioSource>();
     }
 
